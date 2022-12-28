@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-padding-top: 0rem;
+}
+*, 
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --white: white;
+  --green: #4EE1A0;
+  --black: #151515;
+  --gray:  #D9D9D9;
+  --gap: 3rem;
+}
+
+body {
+  background-color: var(--black);
+  margin: 0px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--white);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5 ,h6, p{
+  margin: 0;
+}
+
+.container{
+  max-width: 111rem;
+  width: 100%;
+}
+
+.h-xl{
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  font-weight: 700;
+}
+
+.w-100{width: 100%;}
+
+.flex{display: flex;}
+
+.flex-justify-center{justify-content: center;}
+
+.flex-end {justify-content: flex-end;}
+.flex-start {justify-content: flex-start;}
+
+.flex-between {justify-content: space-between;}
+
+.flex-column{flex-direction: column;}
+
+.align-center{align-items: center;}
+
+
+.btn-principal{
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0rem;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.28571px;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid var(--green); 
+}
+
+.btn-principal:hover{
+  color: var(--green);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1050px) {
+  .container{
+    width: 90%;
+  }
+  
+  .h-xl{
+    font-size: 8.15rem;
+    line-height: 8.15rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .h-xl{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .container{
+    width: 95%;
+  }
+}
+

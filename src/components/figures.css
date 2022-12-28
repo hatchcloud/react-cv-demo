@@ -1,0 +1,66 @@
+
+.figures{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.figure-oval{
+    display: block;
+    background-image: url(../assets/img/obal-half-2.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    width: 265px;
+    height: 129px;
+    top: 13rem;
+}
+
+.figure-circle{
+    display: block;
+    background-image: url(../assets/img/oval-half.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    position: absolute;
+    width: 64.5px;
+    height: 129px;
+    top: 52rem;
+    right: 0rem;
+}
+
+
+@media screen and (min-width: 850px) {
+    .figures{
+        width: 100%;
+    } 
+
+}
+
+
+@media screen and (min-width: 1050px) {
+
+    .figure-circle{
+        display: block;
+        background-image: url(../assets/img/oval.svg);
+        width: 129px;
+        height: 129px;
+        top: 52rem;
+        right: 39%;
+    }
+}
+@media screen and (min-width: 1550px){
+    .figures{
+        width: 155rem;
+    } 
+    .figure-oval{
+        background-image: url(../assets/img/oval-2.svg);
+        width: 530px;
+        height: 129px;
+    }
+
+}
+
