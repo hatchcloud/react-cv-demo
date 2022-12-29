@@ -30,6 +30,24 @@ body {
 h1, h2, h3, h4, h5 ,h6, p{
   margin: 0;
 }
+.mt-s{
+  margin-top: calc(var(--gap)*0.5);
+}
+
+.mt-1{
+  margin-top: var(--gap);
+}
+
+.mt-3{
+  margin-top: calc(var(--gap)*3);
+}
+.mb-3{
+  margin-bottom: calc(var(--gap)*3);
+}
+.mt-4{
+  margin-top: calc(var(--gap)*4);
+}
+
 
 .container{
   max-width: 111rem;
@@ -42,6 +60,11 @@ h1, h2, h3, h4, h5 ,h6, p{
   font-weight: 700;
 }
 
+.h-m{
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
 .w-100{width: 100%;}
 
 .flex{display: flex;}

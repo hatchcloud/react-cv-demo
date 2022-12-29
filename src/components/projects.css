@@ -1,0 +1,17 @@
+.img-project{
+    height: 40rem;
+    width: 100%;
+    background-color: blueviolet;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.grid-projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--gap);
+    row-gap: calc(var(--gap)*2);
+}

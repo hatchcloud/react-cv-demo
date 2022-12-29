@@ -5,6 +5,11 @@
     padding-bottom: calc(var(--gap) * 2)
 }
 
+.grid-skills div:hover {
+    color: var(--green);
+    cursor: default;
+}
+
 .grid-skills h2{
     font-weight: 700;
     font-size: 48px;
@@ -18,8 +23,6 @@
     line-height: 28px;
     color: var(--gray)
 }
-
-
 
 
 @media screen and (max-width: 1050px) {

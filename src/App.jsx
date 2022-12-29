@@ -3,16 +3,20 @@ import Hero from './components/Hero';
 import Nav from "./components/Nav"
 import Figures from './components/Figures';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 function App() {
-  const main = "main";
   return (
-    <div className="App w-100 flex flex-justify-center">
-      <Nav />
-      <main role={main} className="w-100 flex flex-column align-center">
+    <div className='w-100 flex flex-justify-center flex-column'>
+      
+      <header className='w-100 flex flex-column align-center'>
+        <Nav />
         <Figures />
         <Hero />
+      </header>
+      <main className="w-100 flex flex-column align-center">
         <Skills />
+        <Projects />
       </main>
     </div>
   )
