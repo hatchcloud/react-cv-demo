@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5 ,h6, p{
 .mt-1{
   margin-top: var(--gap);
 }
+.pt-1{
+  padding-top: var(--gap);
+}
 
 .mt-3{
   margin-top: calc(var(--gap)*3);

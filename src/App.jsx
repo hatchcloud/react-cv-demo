@@ -6,6 +6,39 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 
 function App() {
+  
+  const [projects, setProjects] = useState([
+    {
+      img: 'project-1',
+      title: 'DESIGN PORTFOLIO',
+      languages: 'HTML CSS'
+    },
+    {
+      img: 'project-2',
+      title: 'E-LEARNING LANDING PAGE',
+      languages: 'HTML CSS'
+    },
+    {
+      img: 'project-3',
+      title: 'TODO WEB APP',
+      languages: 'HTML CSS JAVASCRIPT'
+    },
+    {
+      img: 'project-4',
+      title: 'ENTERTAINMENT WEB APP',
+      languages: 'HTML CSS JAVASCRIPT'
+    },
+    {
+      img: 'project-5',
+      title: 'MEMORY GAME',
+      languages: 'HTML CSS JAVASCRIPT'
+    },
+    {
+      img: 'project-6',
+      title: 'ART GALLERY SHOWCASE',
+      languages: 'HTML CSS JAVASCRIPT'
+    }
+  ])
   return (
     <div className='w-100 flex flex-justify-center flex-column'>
       
@@ -16,7 +49,9 @@ function App() {
       </header>
       <main className="w-100 flex flex-column align-center">
         <Skills />
-        <Projects />
+        <Projects 
+          projects = {projects}
+        />
       </main>
     </div>
   )

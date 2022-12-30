@@ -1,7 +1,7 @@
 import Entrance from './Entrance'
 import './projects.css'
 
-const Projects = () => {
+const Projects = ({projects}) => {
   return (
     <section className='container'>
         <div className='flex flex-between align-center mt-4 mb-3'>
@@ -9,12 +9,11 @@ const Projects = () => {
             <a className='btn-principal'>Contact me</a>
         </div>
         <div className='grid-projects'>
-            <Entrance />
-            <Entrance />
-            <Entrance />
-            <Entrance />
-            <Entrance />
-            <Entrance />
+            {projects.map( project=>(
+                <Entrance 
+                    project = {project}
+                />
+            ))}
         </div>
     </section>
   )

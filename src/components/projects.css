@@ -1,12 +1,45 @@
 .img-project{
     height: 40rem;
     width: 100%;
-    background-color: blueviolet;
+    background-position: center;
+    background-size: cover;
 }
+
+.project-1{
+    background-image: url('../assets/img/Bitmap.jpg');
+}
+.project-2{
+    background-image: url('../assets/img/Bitmap2.png');
+}
+.project-3{
+    background-image: url('../assets/img/Bitmap3.png');
+}
+.project-4{
+    background-image: url('../assets/img/Bitmap4.png');
+}
+.project-5{
+    background-image: url('../assets/img/Bitmap5.png');
+}
+.project-6{
+    background-image: url('../assets/img/Bitmap6.png');
+}
+
+.overlay{
+    height: 40rem;
+    width: 100%;
+    position: absolute;
+}
+
+.overlay:hover{
+    background-color: hsla(0, 0%, 0%, 0.6);
+    background-blend-mode: multiply;
+}
+
 .project{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 }
 
 .grid-projects{
