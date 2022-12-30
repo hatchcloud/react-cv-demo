@@ -28,11 +28,24 @@
     height: 40rem;
     width: 100%;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay a {
+    display:none;
 }
 
 .overlay:hover{
     background-color: hsla(0, 0%, 0%, 0.6);
     background-blend-mode: multiply;
+}
+
+.overlay:hover a {
+    display:block;
+    background-color: none;
 }
 
 .project{
@@ -42,9 +55,52 @@
     position: relative;
 }
 
+.project p {
+    color: var(--gray);
+}
+
 .grid-projects{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--gap);
     row-gap: calc(var(--gap)*2);
+}
+.btn-hide{
+    display: none;
+}
+
+@media screen and (max-width: 1050px){
+    .gallery {
+        padding: var(--gap);
+    }
+}
+@media screen and (max-width: 950px){
+    .gallery {
+        padding: var(--gap);
+    }
+    .img-project{
+        height: 25rem;
+    }
+    .overlay{
+        height: 25rem;
+    }
+    .overlay:hover{
+        visibility: hidden;
+    }
+    .btn-hide{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 1050px){
+    .gallery {
+        padding: var(--gap);
+    }
+}
+@media screen and (max-width: 800px){
+    .grid-projects{
+        grid-template-columns: 1fr;
+        column-gap: var(--gap);
+        row-gap: calc(var(--gap)*2);
+    }
 }

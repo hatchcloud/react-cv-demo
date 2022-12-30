@@ -3,7 +3,7 @@ import './projects.css'
 
 const Projects = ({projects}) => {
   return (
-    <section className='container'>
+    <section className='container gallery mb-3'>
         <div className='flex flex-between align-center mt-4 mb-3'>
             <h2 className='h-xl'>Projects</h2>
             <a className='btn-principal'>Contact me</a>

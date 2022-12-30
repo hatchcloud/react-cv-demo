@@ -33,14 +33,12 @@ h1, h2, h3, h4, h5 ,h6, p{
 .mt-s{
   margin-top: calc(var(--gap)*0.5);
 }
-
 .mt-1{
   margin-top: var(--gap);
 }
-.pt-1{
-  padding-top: var(--gap);
+.mt-2{
+  margin-top: calc(var(--gap)*1.5);
 }
-
 .mt-3{
   margin-top: calc(var(--gap)*3);
 }
@@ -49,6 +47,14 @@ h1, h2, h3, h4, h5 ,h6, p{
 }
 .mt-4{
   margin-top: calc(var(--gap)*4);
+}
+
+.ml-1{
+  margin-left: var(--gap);
+}
+
+.pt-1{
+  padding-top: var(--gap);
 }
 
 
@@ -85,7 +91,7 @@ h1, h2, h3, h4, h5 ,h6, p{
 
 
 .btn-principal{
-  background-color: var(--black);
+
   color: var(--white);
   padding: 0rem;
   font-weight: 700;
@@ -94,7 +100,7 @@ h1, h2, h3, h4, h5 ,h6, p{
   letter-spacing: 2.28571px;
   text-transform: uppercase;
   padding-bottom: 1rem;
-  border-bottom: 5px solid var(--green); 
+  border-bottom: 4px solid var(--green); 
 }
 
 .btn-principal:hover{
@@ -120,5 +126,12 @@ h1, h2, h3, h4, h5 ,h6, p{
   .container{
     width: 95%;
   }
+
+  .mt-4{
+    margin-top: var(--gap);
+  } 
+  .mb-3{
+    margin-bottom: calc(var(--gap)*2);
+  } 
 }
 
