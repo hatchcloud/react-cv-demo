@@ -15,6 +15,7 @@ html {
   --black:    #151515;
   --gray:     #D9D9D9;
   --darkGray: #242424;
+  --red:      #FF6F5B;
   --gap: 3rem;
 }
 
@@ -109,6 +110,8 @@ h1, h2, h3, h4, h5 ,h6, p{
   background-color: var(--darkGray);
 }
 
+
+
 .btn-principal{
 
   color: var(--white);
@@ -118,8 +121,9 @@ h1, h2, h3, h4, h5 ,h6, p{
   line-height: 26px;
   letter-spacing: 2.28571px;
   text-transform: uppercase;
-  padding-bottom: 1rem;
-  border-bottom: 4px solid var(--green); 
+  padding-bottom: 1rem !important;
+  padding-left: 0rem !important;
+  border-bottom: 4px solid var(--green) !important; 
 }
 
 .btn-principal:hover{

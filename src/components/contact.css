@@ -18,8 +18,11 @@
     text-transform: uppercase;
     padding-bottom: calc(var(--gap)*0.7);
     padding-left: calc(var(--gap)*0.7);
-    width: 100%;
 }
+
+
+
+
 .form-contact textarea{
     resize: none;
     height: 11rem;
@@ -30,6 +33,11 @@
     border-bottom: 1px solid var(--green);
     outline: none;
 }
+
+.form-text h2,p{
+    margin-bottom:  calc(var(--gap)*1.5) !important ;
+}
+
 
 
 @media screen and (max-width: 1050px){
@@ -43,5 +51,8 @@
 @media screen and (max-width: 800px){
     .grid-contact{
         grid-template-columns: 1fr;
+    }
+    .form-text{
+        text-align: center;
     }
 }
