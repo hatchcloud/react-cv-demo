@@ -10,10 +10,11 @@ html {
 }
 
 :root {
-  --white: white;
-  --green: #4EE1A0;
-  --black: #151515;
-  --gray:  #D9D9D9;
+  --white:    white;
+  --green:    #4EE1A0;
+  --black:    #151515;
+  --gray:     #D9D9D9;
+  --darkGray: #242424;
   --gap: 3rem;
 }
 
@@ -42,6 +43,9 @@ h1, h2, h3, h4, h5 ,h6, p{
 .mt-3{
   margin-top: calc(var(--gap)*3);
 }
+.mb-2{
+  margin-bottom: calc(var(--gap)*2);
+}
 .mb-3{
   margin-bottom: calc(var(--gap)*3);
 }
@@ -56,6 +60,16 @@ h1, h2, h3, h4, h5 ,h6, p{
 .pt-1{
   padding-top: var(--gap);
 }
+.pb-3{
+  padding-bottom: calc(var(--gap)*3);
+}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+
 
 
 .container{
@@ -89,6 +103,11 @@ h1, h2, h3, h4, h5 ,h6, p{
 
 .align-center{align-items: center;}
 
+.aling-end{align-items: flex-end;}
+
+.dark-gray{
+  background-color: var(--darkGray);
+}
 
 .btn-principal{
 

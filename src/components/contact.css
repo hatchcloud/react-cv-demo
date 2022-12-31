@@ -1,0 +1,47 @@
+.grid-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: calc(var(--gap)*8);
+}
+
+.form-contact{
+    gap: var(--gap);
+}
+
+.form-contact input,textarea{
+    background-color: var(--darkGray);
+    border-style: none;
+    height: 4rem;
+    color: var(--gray);
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--white);
+    text-transform: uppercase;
+    padding-bottom: calc(var(--gap)*0.7);
+    padding-left: calc(var(--gap)*0.7);
+    width: 100%;
+}
+.form-contact textarea{
+    resize: none;
+    height: 11rem;
+}
+
+.form-contact input:focus,textarea:focus{
+    border-style: none;
+    border-bottom: 1px solid var(--green);
+    outline: none;
+}
+
+
+@media screen and (max-width: 1050px){
+    .grid-contact{
+        padding: var(--gap);
+        column-gap: calc(var(--gap)*4);
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .grid-contact{
+        grid-template-columns: 1fr;
+    }
+}

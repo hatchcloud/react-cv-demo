@@ -4,6 +4,7 @@ import Nav from "./components/Nav"
 import Figures from './components/Figures';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   
@@ -53,6 +54,10 @@ function App() {
           projects = {projects}
         />
       </main>
+      <footer className="w-100 flex flex-column align-center dark-gray pb-3">
+        <Contact />
+        <Nav />
+      </footer>
     </div>
   )
 }

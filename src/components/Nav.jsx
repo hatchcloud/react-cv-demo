@@ -12,7 +12,7 @@ const nav = () => {
     let d = "24px"
 
     return (
-        <header role={banner} className="banner container flex">
+        <div className="banner container flex">
             <img src={logo}/>
             <nav role={navigation} className="nav-icons flex">
                 <img src={logoGithub} width={d} height={d}/>
@@ -20,7 +20,7 @@ const nav = () => {
                 <img src={logoLinkedin} width={d} height={d}/>
                 <img src={logoTwitter} width={d} height={d}/>
             </nav>
-        </header>
+        </div>
     )
 }
 
